@@ -46,8 +46,8 @@
  *
  **/
 
-#ifndef __SMA13X_H__
-#define __SMA13X_H__
+#ifndef _SMA13X_H
+#define _SMA13X_H
 /****************************************************************/
 /**\name	DATA TYPES INCLUDES		*/
 /************************************************************/
@@ -436,9 +436,6 @@ burst_read(device_addr, register_addr, register_data, rd_len)
 /**************************************************************/
 /**\name	REGISTER ADDRESS DEFINITIONS    */
 /**************************************************************/
-#define SMA13X_EEP_OFFSET                       (0x16)
-#define SMA13X_IMAGE_BASE                       (0x38)
-#define SMA13X_IMAGE_LEN                        (22)
 #define SMA13X_CHIP_ID_ADDR                     (0x00)
 /** DATA ADDRESS DEFINITIONS */
 #define SMA13X_X_AXIS_LSB_ADDR                  (0x02)
@@ -1088,7 +1085,7 @@ SMA13X_INTR_SOURCE_ADDR
 /***************************************************/
 #define OPEN_DRAIN	(0x01)
 /**< It refers open drain selection*/
-#define PUSS_PULL	(0x01)
+#define PUSS_PULL	(0x00)
 /**< It refers push pull selection*/
 
 /****************************************************/

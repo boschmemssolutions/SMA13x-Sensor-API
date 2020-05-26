@@ -50,6 +50,7 @@
 /*! user defined code to be added here ... */
 static struct sma13x_t *p_sma13x;
 /*! Based on Bit resolution value_u8 should be modified */
+/* SMA13X supports ONLY 14bit resolution */
 u8 V_SMA13XRESOLUTION_U8 = SMA13X_14_RESOLUTION;
 
 /****************************************************************************/

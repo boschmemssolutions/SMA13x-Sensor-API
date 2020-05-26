@@ -50,14 +50,14 @@ The driver also exposes a set of sysfs nodes under /sys/devices/virtual/input/in
 cat /sys/devices/virtual/input/input0/chip_id
 
 # read the asynced acc data 
-cat /sys/devices/virtual/input/input0/acc_value
+cat /sys/devices/virtual/input/input0/value
 
 # read the acc power config 
-cat /sys/devices/virtual/input/input0/acc_pw_cfg
+cat /sys/devices/virtual/input/input0/pw_cfg
 
-# set the acc power config active 
-echo 0 > /sys/devices/virtual/input/input0/acc_pw_cfg
+# set the acc power to normal mode
+echo 0 > /sys/devices/virtual/input/input0/pw_cfg
 
-# set the acc power config suspend 
-echo 3 > /sys/devices/virtual/input/input0/acc_pw_cfg
+# set the acc power to suspend mode
+echo 3 > /sys/devices/virtual/input/input0/pw_cfg
 ```
